@@ -1,4 +1,4 @@
-# Plan de entrenamiento
+# Plan de entrenamiento — Gol en Contra
 
 ## Cómo abrirlo
 Doble clic en `index.html`. Se abre en el navegador, sin internet ni servidor.

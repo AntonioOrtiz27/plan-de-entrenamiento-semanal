@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plan de la semana — Gol en Contra</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="page">
+
+  <div class="masthead">
+    <h1>Plan de Entrenamiento</h1>
+    <p>Semana de partido: fuerza al inicio, campo el jueves y piernas frescas para el sábado en Gol en Contra.</p>
+  </div>
+
+  <div class="pitch-divider">
+    <svg width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+    <div class="rule"></div>
+  </div>
+
+  <!-- Las tarjetas de cada día se generan desde js/data.js + js/render.js -->
+  <div class="week-plan" id="week-plan"></div>
+
+  <div class="cal-section">
+    <h2>Calendario</h2>
+    <p class="cal-sub">Tildá cada día a medida que entrenás o jugás.</p>
+
+    <div class="week-progress" id="weekProgress"></div>
+
+    <div class="cal-header">
+      <div class="month-label" id="monthLabel"></div>
+      <div class="cal-nav">
+        <button id="prevMonth" aria-label="Mes anterior">‹</button>
+        <button id="nextMonth" aria-label="Mes siguiente">›</button>
+      </div>
+    </div>
+
+    <div class="cal-grid" id="calGrid"></div>
+
+    <div class="legend">
+      <span><i class="dot" style="background:var(--pitch)"></i>Entreno</span>
+      <span><i class="dot" style="background:var(--clay)"></i>Campo</span>
+      <span><i class="dot" style="background:var(--rest)"></i>Descanso</span>
+      <span><i class="dot" style="background:var(--gold)"></i>Partido</span>
+    </div>
+  </div>
+
+  <footer class="notes">
+    Estructura pensada para darte fuerza de choque, agilidad y velocidad explosiva usando las barras, discos y el banco York que tenés en casa, más el trabajo de campo. El trabajo pesado y los saltos quedan lo más lejos posible del día del partido.
+  </footer>
+
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/render.js"></script>
+<script src="js/calendar.js"></script>
+</body>
+</html>
